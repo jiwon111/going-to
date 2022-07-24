@@ -1,30 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ButtonStyle = styled.div`
   display: flex;
-  background: #8ccf9b;
+  //background: #8ccf9b;
+  background: #1bc0a7;
   color: white;
   width: 250px;
   height: 70px;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 `;
 
 const Button = ({ answer, answerId }) => {
-  const [id, setId] = useState([]);
-  //배열로 저장
-  // useEffect(() => {
-  //   setId(answerId);
-  //   console.log(id);
-  // }, );
-
+  const navigate = useNavigate();
   const clickHander = () => {
-    setId(answerId); //배열로 바꾸기
-    console.log(answerId);
     if (answerId === 0) {
       if (answer === '국내') {
         window.location.href = '/domestic';
@@ -33,10 +28,9 @@ const Button = ({ answer, answerId }) => {
       } else {
         console.error();
       }
+    } else {
+      navigate(`${answerId}`);
     }
-    // } else if (answerId===1){
-    //     window.location.href
-    // }
   };
   return (
     <div>

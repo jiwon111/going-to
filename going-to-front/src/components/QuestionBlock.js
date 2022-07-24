@@ -5,24 +5,27 @@ const QuestionBlockStyle = styled.div`
   width: 100%;
   height: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 30px;
   white-space: pre-wrap;
+  justify-content: flex-start;
+  font-weight: 600;
 `;
 const QuestionCounter = styled.div`
-  width: 76px;
-  height: 48px;
-  position: fixed;
+  align-self: flex-end;
   color: #838383;
-  left: 340px;
-  top: 15px;
   font-size: 25px;
+  margin-bottom: 50%;
+  margin-top: 3%;
+  margin-right: 10%;
+  font-weight: normal;
 `;
 const QuestionBlock = ({ question, questionId }) => {
   return (
     <QuestionBlockStyle>
-      {questionId ? <QuestionCounter>{questionId}/3</QuestionCounter> : null}
+      <QuestionCounter>{questionId + 1}/4</QuestionCounter>
       {question}
     </QuestionBlockStyle>
   );

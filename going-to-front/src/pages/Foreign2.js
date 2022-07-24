@@ -11,11 +11,10 @@ const Foreign2 = () => {
         questionId={2}
       />
       <Buttons>
-        <Button answer={'휴양'} />
-        <Button answer={'관광'} />
-        <Button answer={'먹방'} />
-        <Button answer={'쇼핑'} />
-        <Button answer={'문화탐방'} />
+        <Button answer={'휴양'} answerId={2} />
+        <Button answer={'먹방'} answerId={2} />
+        <Button answer={'쇼핑'} answerId={2} />
+        <Button answer={'문화탐방'} answerId={2} />
       </Buttons>
     </>
   );
