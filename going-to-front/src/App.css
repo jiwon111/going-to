@@ -5,8 +5,7 @@
   justify-content: center;
 }
 .AppCover {
-  width: 100vw;
-  height: 100vh;
+  width: 390px;
   display: flex;
   justify-content: center;
   /* background-color: #dcf4e1; */
@@ -14,4 +13,9 @@
 .AppFrame {
   width: 390px;
   /* height: 844px; */
+}
+@media only screen and (min-width: 700px) {
+  .AppFrame {
+    width: 50%;
+  }
 }

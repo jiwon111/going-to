@@ -12,10 +12,8 @@ const Cover = () => {
         src={Logo}
         alt="Logo"
         style={{
-          width: '50%',
-          height: '50%',
+          width: '200px',
           marginTop: '15%',
-          marginBottom: '20%',
         }}
       />
       <Description>
@@ -44,9 +42,12 @@ const Background = styled.div`
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  /* margin-left: 8%;
-  margin-top: 8%; */
+  margin-top: 20%;
   margin-bottom: 20%;
+  @media only screen and (min-width: 1100px) {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 `;
 const Font = styled.div`
   font-size: 30px;
@@ -58,8 +59,8 @@ const PointFont = styled.div`
 const CoverButton = styled.div`
   margin-top: 3%;
   background-color: #1bc0a7;
-  width: 50%;
-  height: 40px;
+  width: 180px;
+  height: 45px;
   border-radius: 20px;
   display: flex;
   align-items: center;

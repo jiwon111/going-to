@@ -8,10 +8,13 @@ import Domestic2 from './pages/Domestic2';
 import Foreign2 from './pages/Foreign2';
 import Domestic3 from './pages/Domestic3';
 import Foreign3 from './pages/Foreign3';
-
+import Result from './pages/Result';
 const App = () => {
   return (
-    <div className={window.location.pathname === '/' ? 'AppCover' : 'App'}>
+    <div className="App">
+      {/* <div
+        className={window.location.pathname === '/' ? 'AppCover' : 'AppFrame'}
+      > */}
       <div className="AppFrame">
         <title>고잉투</title>
         <BrowserRouter>
@@ -24,6 +27,7 @@ const App = () => {
             <Route path="/foreign" element={<When />} />
             <Route path="/foreign/1" element={<Foreign2 />} />
             <Route path="/foreign/1/2" element={<Foreign3 />} />
+            <Route path="/result" element={<Result />} />
           </Routes>
         </BrowserRouter>
       </div>
