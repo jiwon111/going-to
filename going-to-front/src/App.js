@@ -12,9 +12,6 @@ import Result from './pages/Result';
 const App = () => {
   return (
     <div className="App">
-      {/* <div
-        className={window.location.pathname === '/' ? 'AppCover' : 'AppFrame'}
-      > */}
       <div className="AppFrame">
         <title>고잉투</title>
         <BrowserRouter>

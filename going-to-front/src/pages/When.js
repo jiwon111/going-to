@@ -1,9 +1,11 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import QuestionBlock from '../components/QuestionBlock';
 import Button from '../components/Button';
 
 const When = () => {
+  console.log(useLocation());
   return (
     <>
       <QuestionBlock question={'언제 갈 예정인가요?'} questionId={1} />

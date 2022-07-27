@@ -1,9 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import QuestionBlock from '../components/QuestionBlock';
 
 const Foreign2 = () => {
+  const location = useLocation();
+  console.log(location);
   return (
     <>
       <QuestionBlock

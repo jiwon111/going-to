@@ -13,7 +13,6 @@ const Bar = styled.div`
   height: 10px;
   background-color: #f1f1f1;
   border-radius: 20px;
-  transition: width 1s;
 `;
 const Progress = styled.div`
   width: ${(props) => props.width};

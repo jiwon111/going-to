@@ -7,16 +7,31 @@ const Button = ({ answer, answerId }) => {
   const clickHander = () => {
     if (answerId === 0) {
       if (answer === '국내') {
-        window.location.href = '/domestic';
+        navigate('/domestic', {
+          state: {
+            answer,
+            answerId,
+          },
+        });
       } else if (answer === '해외') {
-        window.location.href = '/foreign';
+        navigate('/foreign', {
+          state: {
+            answer,
+            answerId,
+          },
+        });
       } else {
         console.error();
       }
     } else if (answerId === 3) {
       window.location.href = '/result';
     } else {
-      navigate(`${answerId}`);
+      navigate(`${answerId}`, {
+        state: {
+          answer,
+          answerId,
+        },
+      });
     }
   };
   return (
