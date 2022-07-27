@@ -14,7 +14,7 @@ const QuestionBlock = ({ question, questionId }) => {
 export default QuestionBlock;
 const QuestionBlockStyle = styled.div`
   width: 100%;
-  height: 50%;
+  height: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
