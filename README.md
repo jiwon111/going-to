@@ -2,4 +2,5 @@
 
 만드는 중
 
-![mobile](https://user-images.githubusercontent.com/65504940/180641724-c473abf1-9874-4a01-91c4-a359758f91c6.png)
+![mobile](https://user-images.githubusercontent.com/65504940/181257069-f5b140bd-8264-4dff-adf9-fcfd92d7d60e.png)
+![mobile (2)](https://user-images.githubusercontent.com/65504940/181257417-4c6e98d9-b032-4827-9c1f-a17b7576bee4.png)
