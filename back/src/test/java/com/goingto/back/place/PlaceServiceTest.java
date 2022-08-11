@@ -1,6 +1,5 @@
 package com.goingto.back.place;
 
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.junit.jupiter.api.Test;
 
@@ -10,10 +9,13 @@ public class PlaceServiceTest {
 	
 	@Test
 	void testJpa() {
-		List<Place> p= this.placeRepository.findBySeason("봄");
-		for (int i=0;i<p.size();i++){
-			System.out.println(p.get(i).getName());
-		}
-		// Place p2 = this.placeRepository.findByNameAndBudget("베트남", 100);
+		Place p = new Place();
+        p.setImg("Images/Canada.jpg");
+		p.setBudget(300);
+		p.setIsDomestic(false);
+		p.setName("캐나다");
+		p.setPrefer("문화탐방");
+		p.setSeason("가을");
+		this.placeRepository.save(p);
 	}
 }
