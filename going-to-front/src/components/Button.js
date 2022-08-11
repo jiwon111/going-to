@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { surveyInit, surveyInsert } from '../modules/survey';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Button = ({ answer, answerId }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const clickHander = () => {
     if (answerId === 0) {
       if (answer === '국내') {
+        dispatch(surveyInsert(true));
         navigate('/domestic', {
           state: {
             answer,
@@ -14,6 +19,7 @@ const Button = ({ answer, answerId }) => {
           },
         });
       } else if (answer === '해외') {
+        dispatch(surveyInsert(false));
         navigate('/foreign', {
           state: {
             answer,
@@ -24,8 +30,10 @@ const Button = ({ answer, answerId }) => {
         console.error();
       }
     } else if (answerId === 3) {
-      window.location.href = '/result';
+      dispatch(surveyInsert(answer));
+      navigate('/result');
     } else {
+      dispatch(surveyInsert(answer));
       navigate(`${answerId}`, {
         state: {
           answer,

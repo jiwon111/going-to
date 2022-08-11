@@ -24,6 +24,7 @@ const App = () => {
             <Route path="/foreign" element={<When />} />
             <Route path="/foreign/1" element={<Foreign2 />} />
             <Route path="/foreign/1/2" element={<Foreign3 />} />
+
             <Route path="/result" element={<Result />} />
           </Routes>
         </BrowserRouter>

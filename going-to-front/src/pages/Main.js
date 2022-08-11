@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { surveyInit } from '../modules/survey';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import QuestionBlock from '../components/QuestionBlock';

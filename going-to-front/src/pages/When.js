@@ -10,10 +10,10 @@ const When = () => {
     <>
       <QuestionBlock question={'언제 갈 예정인가요?'} questionId={1} />
       <WhenButtons>
-        <Button answer={'3월~5월'} answerId={1} />
-        <Button answer={'6월~8월'} answerId={1} />
-        <Button answer={'9월~11월'} answerId={1} />
-        <Button answer={'12월~1월'} answerId={1} />
+        <Button answer={'봄'} answerId={1} />
+        <Button answer={'여름'} answerId={1} />
+        <Button answer={'가을'} answerId={1} />
+        <Button answer={'겨울'} answerId={1} />
       </WhenButtons>
     </>
   );
